@@ -1,0 +1,17 @@
+1 -- film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
+
+Select rating_rate from film group by rating_rate
+
+2 -- film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen
+film sayısını sıralayınız.
+
+SELECT replacement_cost, COUNT(*)  FROM film GROUP BY replacement_cost HAVING COUNT(*) > 325;
+
+3 -- stomer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir? 
+
+Select count(*) from stomer group by store_id 
+
+4 --  city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra
+en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+
+select country_id , count(city) from city group by counry_id order by count(city) desc limit 1
