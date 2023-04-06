@@ -8,7 +8,7 @@
 <html>
 <head>
 	<style>
-		p {
+		.p {
 			color: blue;
 		}
 	</style>
