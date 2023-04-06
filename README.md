@@ -7,7 +7,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Örnek Sayfa</title>
+	<style>
+		p {
+			color: blue;
+		}
+	</style>
 </head>
 <body>
 	<h1>Merhaba Dünya!</h1>
